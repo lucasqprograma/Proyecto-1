@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo" ><img src="imagenes/logo.png"></a> 
+            <div class="search-box">
+                <img src="imagenes/search.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="imagenes/home.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="imagenes/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="imagenes/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="imagenes/message.png"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="imagenes/notification.png"><span>Notifications</span></a></li>
+            </ul>
+       </div>
+        
+        <div class="navbar-right">
+                <div class="online">
+                    <img src="imagenes/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+                </div> 
+               
+        </div>
+
+      <!-- -----------profile-drop-down-menu---------------- -->
+            <div class="profile-menu-wrap" id="profileMenu">
+                <div class="profile-menu">
+                    <div class="user-info">
+                        <img src="imagenes/user-1.png" >
+                        <div>
+                            <h3>Rayan Walton</h3>
+                            <a href="#"> See your profile</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <a href="#" class="profile-menu-link">
+                        <img src="imagenes/feedback.png">
+                        <p>Give Feedback</p>
+                        <span></span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="imagenes/setting.png">
+                        <p>Settings & Privacy </p>
+                        <span></span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="imagenes/help.png">
+                        <p>Help & Support</p>
+                        <span></span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="imagenes/display.png">
+                        <p>Display & Accessibility</p>
+                        <span></span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="imagenes/logout.png">
+                        <p>Logout</p>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+    </nav>
+      
+
+   <!--  ------------- navbar close ---------------- -->
+
+   <div class="container">
+    <!-- -------------left-sidebar--------------- -->
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="imagenes/cover-pic.png" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="imagenes/user-1.png">
+                    <h1>Proyecto #1</h1>
+                    <h3>Lucas Quiroga/Web Developer</h3>
+                    <ul>
+                        <li>Sitio a fin ilutrativo<span></span></li>
+                        <li>your friends<span>810</span></li>
+                        <li>Your connections<span>205</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#"><img src="imagenes/items.png" alt="">My items</a>
+                    <a href="#"><img src="imagenes/premium.png" alt="">Try Premium</a>
+                </div>
+
+                <div class="sidebar-activity"  id="sidebarActivity">
+                     <h3>RECENT</h3>
+                     <a href="#"><img src="imagenes/recent.png">Web Development</a>
+                     <a href="#"><img src="imagenes/recent.png">User Interface</a>
+                     <a href="#"><img src="imagenes/recent.png">Online learning</a>
+                     <a href="#"><img src="imagenes/recent.png">Learn Online</a>
+                     <a href="#"><img src="imagenes/recent.png">Code Better</a>
+                     <a href="#"><img src="imagenes/recent.png">Group learning</a>
+                     <h3>GROUPS</h3>
+                     <a href="#"><img src="imagenes/group.png">Group learning</a>
+                     <a href="#"><img src="imagenes/group.png">HTML & CSS Learners</a>
+                     <a href="#"><img src="imagenes/group.png">Python & JavaScript Group</a>
+                     <a href="#"><img src="imagenes/group.png">Learn Coding Online</a>
+                     <h3>HASHTAG</h3>
+                     <a href="#"><img src="imagenes/hashtag.png">webdevelopment</a>
+                     <a href="#"><img src="imagenes/hashtag.png">userinterface</a>
+                     <a href="#"><img src="imagenes/hashtag.png">online learning</a>
+                     <div class="discover-more-link">
+                        <a href="#">Discover more</a>
+                     </div>
+                </div>
+            </div>
+            <p id="showMoreLink"  onclick="toggleActivity()">Show more<b>+</b></p>
+
+        </div>
+         <!-- -------------main-content--------------- -->
+       <div class="main-content">
+
+         <div class="create-post">
+            <div class="create-post-input">
+                <img src="imagenes/user-1.png">
+                <textarea rows="2" placeholder="write a post"></textarea>
+            </div>
+            <div class="create-post-links">
+                <li><img src="imagenes/photo.png">Photo</li>
+                <li><img src="imagenes/video.png">Video</li>
+                <li><img src="imagenes/event.png">Event</li>
+                <li>Post</li>
+            </div>
+         </div>
+
+         <div class="sort-by">
+            <hr>
+            <p>Sort by: <span>top <img src="imagenes/down-arrow.png"></span></p>
+         </div>
+
+         <div class="post">
+              <div class="post-author">
+                <img src="imagenes/user-3.png">
+                <div>
+                    <h1>HOLA!</h1>
+                    <small>MENU INTERACTIVO SOBRE IMAGEN, EXTREMO DERECHO EN LO ALTO  </small>
+                    <small>boton "show more" descubre enlaces</small>
+                </div>
+              </div>
+              <p>The succes of every websites depends on serch engine optimisation and digital marketing strategy. If you are on first page of all major seach engines then you are a head among your competitors</p>
+              <img src="imagenes/post-image-1.png" width="100%">
+              
+              <div class="post-stats">
+                <div>
+                    <img src="imagenes/thumbsup.png">
+                    <img src="imagenes/love.png">
+                    <img src="imagenes/clap.png">
+                    <span class="liked-users">Abhinav Mishra and 75 others</span>
+                </div>
+                <div>
+                    <span>22 comments &middot; 40  shares</span>
+                </div>
+              </div>
+              <div class="post-activity">
+                <div>
+                    <img src="imagenes/user-1.png" class="post-activity-user-icon">
+                    <img src="imagenes/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+
+                <div  class="post-activity-link">
+                    <img src="imagenes/like.png">
+                    <span>Like</span>
+                 </div>
+
+                <div  class="post-activity-link">
+                    <img src="imagenes/comment.png">
+                    <span>Comment</span>
+                </div>
+
+                <div  class="post-activity-link">
+                    <img src="imagenes/share.png">
+                    <span>Share</span>
+                </div>
+
+                <div  class="post-activity-link">
+                    <img src="imagenes/send.png">
+                    <span>Send</span>
+                </div>
+              </div>
+         </div>
+
+         <div class="post">
+            <div class="post-author">
+              <img src="imagenes/user-4.png">
+              <div>
+                  <h1>Clarence george</h1>
+                  <small>Founder and CEO at Gelleilio Group | Angel Investor</small>
+                  <small>2 hours ago</small>
+              </div>
+            </div>
+            <p>The succes of every websites depends on serch engine optimisation and digital marketing strategy. If you are on first page of all major seach engines then you are a head among your competitors</p>
+            <img src="imagenes/post-image-3.png" width="100%">
+            
+            <div class="post-stats">
+              <div>
+                  <img src="imagenes/thumbsup.png">
+                  <img src="imagenes/love.png">
+                  <img src="imagenes/clap.png">
+                  <span class="liked-users">Abhinav Mishra and 75 others</span>
+              </div>
+              <div>
+                  <span>22 comments &middot; 40  shares</span>
+              </div>
+            </div>
+            <div class="post-activity">
+              <div>
+                  <img src="imagenes/user-1.png" class="post-activity-user-icon">
+                  <img src="imagenes/down-arrow.png" class="post-activity-arrow-icon">
+              </div>
+              
+              <div  class="post-activity-link">
+                  <img src="imagenes/like.png">
+                  <span>Like</span>
+               </div>
+
+              <div  class="post-activity-link">
+                  <img src="imagenes/comment.png">
+                  <span>Comment</span>
+              </div>
+
+              <div  class="post-activity-link">
+                  <img src="imagenes/share.png">
+                  <span>Share</span>
+              </div>
+
+              <div  class="post-activity-link">
+                  <img src="imagenes/send.png">
+                  <span>Send</span>
+              </div>
+            </div>
+       </div>
+
+       <div class="post">
+        <div class="post-author">
+          <img src="imagenes/user-3.png">
+          <div>
+              <h1>Benjamin Leo</h1>
+              <small>Founder and CEO at Gelleilio Group | Angel Investor</small>
+              <small>2 hours ago</small>
+          </div>
+        </div>
+        <p>The succes of every websites depends on serch engine optimisation and digital marketing strategy. If you are on first page of all major seach engines then you are a head among your competitors</p>
+        <img src="imagenes/post-image-2.png" width="100%">
+        
+        <div class="post-stats">
+          <div>
+              <img src="imagenes/thumbsup.png">
+              <img src="imagenes/love.png">
+              <img src="imagenes/clap.png">
+              <span class="liked-users">Abhinav Mishra and 75 others</span>
+          </div>
+          <div>
+              <span>22 comments &middot; 40  shares</span>
+          </div>
+        </div>
+        <div class="post-activity">
+          <div>
+              <img src="imagenes/user-1.png" class="post-activity-user-icon">
+              <img src="imagenes/down-arrow.png" class="post-activity-arrow-icon">
+          </div>
+          
+          <div  class="post-activity-link">
+              <img src="imagenes/like.png">
+              <span>Like</span>
+           </div>
+
+          <div  class="post-activity-link">
+              <img src="imagenes/comment.png">
+              <span>Comment</span>
+          </div>
+
+          <div  class="post-activity-link">
+              <img src="imagenes/share.png">
+              <span>Share</span>
+          </div>
+
+          <div  class="post-activity-link">
+              <img src="imagenes/send.png">
+              <span>Send</span>
+          </div>
+        </div>
+   </div>
+
+   <div class="post">
+    <div class="post-author">
+      <img src="imagenes/user-3.png">
+      <div>
+          <h1>Benjamin Leo</h1>
+          <small>Founder and CEO at Gelleilio Group | Angel Investor</small>
+          <small>2 hours ago</small>
+      </div>
+    </div>
+    <p>The succes of every websites depends on serch engine optimisation and digital marketing strategy. If you are on first page of all major seach engines then you are a head among your competitors</p>
+    <img src="imagenes/post-image-4.png" width="100%">
+    
+    <div class="post-stats">
+      <div>
+          <img src="imagenes/thumbsup.png">
+          <img src="imagenes/love.png">
+          <img src="imagenes/clap.png">
+          <span class="liked-users">Abhinav Mishra and 75 others</span>
+      </div>
+      <div>
+          <span>22 comments &middot; 40  shares</span>
+      </div>
+    </div>
+    <div class="post-activity">
+      <div>
+          <img src="imagenes/user-1.png" class="post-activity-user-icon">
+          <img src="imagenes/down-arrow.png" class="post-activity-arrow-icon">
+      </div>
+      
+      <div  class="post-activity-link">
+          <img src="imagenes/like.png">
+          <span>Like</span>
+       </div>
+
+      <div  class="post-activity-link">
+          <img src="imagenes/comment.png">
+          <span>Comment</span>
+      </div>
+
+      <div  class="post-activity-link">
+          <img src="imagenes/share.png">
+          <span>Share</span>
+      </div>
+
+      <div  class="post-activity-link">
+          <img src="imagenes/send.png">
+          <span>Send</span>
+      </div>
+    </div>
+</div>
+
+       </div>
+         <!-- -------------rigth-sidebar--------------- -->
+
+      <div class="rigth-sidebar">
+            <div class="sidebar-news">
+                <img src="imagenes/more.png" class="info-icon">
+                <h3>Trending News</h3>
+                <a href="#">High demand for skilled manpower</a>
+                <span>1d ago &middot; 10,934 readers</span>
+
+                <a href="#">Carrers growing horizontally too</a>
+                <span>19h ago &middot; 1,552 readers</span>
+
+                <a href="#">Less work visa for US, more for UK</a>
+                <span>1d ago &middot; 27,290 readers</span>
+
+                <a href="#">More hiring = higher confidence</a>
+                <span>18h ago &middot; 8,208 readers</span>
+
+                <a href="#">Gautam Adani is the world 's third richest</a>
+                <span>12h ago &middot; 4,502 readers</span>
+
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+
+            <div class="sidebar-ad">
+                <small>Ad  &middot; &middot; &middot; </small>
+                <p>Master the 5 principles of web desing</p>
+                <div>
+                    <img src="imagenes/user-1.png">
+                    <img src="imagenes/mi-logo.png">
+                </div>
+                <b>Brand and demand in Xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get the App</a>
+                <a href="#">More</a>
+
+                <div class="copyright-msg">
+                    <img src="imagenes/logo.png" alt="">
+                    <p>Linkedup &#169; 2022. All right reserved</p>
+                </div>
+            </div>
+
+        </div>
+
+   </div>|
+
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+        
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu")
+        }
+
+    </script>
+     <script>
+
+
+      let sideActivity = document.getElementById("sidebarActivity");
+      let moreLink = document.getElementById("showMoreLink");
+
+      function toggleActivity(){
+        sideActivity.classList.toggle("open-activity");
+      
+       if(sideActivity.classList.contains("open-activity")){
+        moreLink.innerHTML = "Show less <b>-</b>";
+       }
+       else{
+        moreLink.innerHTML = "Show more <b>+</b>";
+       }
+    }
+     </script>
+</body>
+</html>
